@@ -21,26 +21,32 @@ wheels/
 .installed.cfg
 *.egg
 
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
-coverage/
-
-# Environment
-.env
-.env.local
-.env.*
-.venv/
+# Virtual Environment
 venv/
 ENV/
+env/
+.venv/
+env.bak/
+ENV.bak/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+.env
+
+# Docker
+.dockerenv
+.dockerinit
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
 
 # OS
 .DS_Store
